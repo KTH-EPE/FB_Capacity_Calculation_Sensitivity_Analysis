@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iidm:network xmlns:iidm="http://www.powsybl.org/schema/iidm/1_15" xmlns:sp="http://www.powsybl.org/schema/iidm/ext/substation_position/1_0" xmlns:slt="http://www.powsybl.org/schema/iidm/ext/slack_terminal/1_5" id="net32" caseDate="2026-03-31T10:21:46.936+02:00" forecastDistance="0" sourceFormat="MATPOWER" minimumValidationLevel="STEADY_STATE_HYPOTHESIS">
+    <iidm:substation id="SUB-1" name="AGGAN CT11">
+        <iidm:voltageLevel id="VL-1" name="AGGAN CT11_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-1" v="146.0673727053855" angle="8.391785542889538"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-1" loadType="UNDEFINED" p0="200.0" q0="80.0" bus="BUS-1" connectableBus="BUS-1"/>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-2" name="AGGAN CT11_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-2" v="411.7647058823529" angle="7.688769594336833"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-2" energySource="OTHER" minP="-1.0E-10" maxP="380.0000000001" ratedS="400.0" voltageRegulatorOn="true" targetP="200.3918" targetV="411.7647058823529" targetQ="0.0" bus="BUS-2" connectableBus="BUS-2">
+                <iidm:minMaxReactiveLimits minQ="-40.0000000001" maxQ="200.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-2#0" energySource="OTHER" minP="-1.0E-10" maxP="570.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="364.6877" targetV="411.7647058823529" targetQ="0.0" bus="BUS-2" connectableBus="BUS-2">
+                <iidm:minMaxReactiveLimits minQ="-60.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-2-1" name="AGGAN CT11 400/135kV" r="0.0" x="1.635119298" g="0.0" b="-0.0" ratedU1="377.7148253068933" ratedU2="135.0" voltageLevelId1="VL-2" bus1="BUS-2" connectableBus1="BUS-2" voltageLevelId2="VL-1" bus2="BUS-1" connectableBus2="BUS-1" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-3" name="ATOMSBERG FT61">
+        <iidm:voltageLevel id="VL-3" name="ATOMSBERG FT61_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-3" v="408.0" angle="-31.873417569701246"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-3" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="-0.0" targetV="408.0" targetQ="0.0" bus="BUS-3" connectableBus="BUS-3">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-3" loadType="UNDEFINED" p0="500.0" q0="50.0" bus="BUS-3" connectableBus="BUS-3"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-4" name="BLOCKET FT51">
+        <iidm:voltageLevel id="VL-4" name="BLOCKET FT51_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-4" v="409.99999999999994" angle="-39.380436776999815"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-4" energySource="OTHER" minP="-1.0E-10" maxP="630.0000000001" ratedS="700.0" voltageRegulatorOn="true" targetP="600.7217" targetV="409.99999999999994" targetQ="0.0" bus="BUS-4" connectableBus="BUS-4">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="350.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-4#0" energySource="OTHER" minP="-1.0E-10" maxP="630.0000000001" ratedS="700.0" voltageRegulatorOn="true" targetP="400.7217" targetV="409.99999999999994" targetQ="0.0" bus="BUS-4" connectableBus="BUS-4">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="350.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-4" loadType="UNDEFINED" p0="800.0" q0="302.0" bus="BUS-4" connectableBus="BUS-4"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-5" name="DALBO FT41">
+        <iidm:voltageLevel id="VL-5" name="DALBO FT41_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-5" v="408.0" angle="-31.997381472990966"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-5" energySource="OTHER" minP="-1.0E9" maxP="1.0E9" ratedS="300.0" voltageRegulatorOn="true" targetP="-0.0" targetV="408.0" targetQ="0.0" bus="BUS-5" connectableBus="BUS-5">
+                <iidm:minMaxReactiveLimits minQ="-200.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-5" loadType="UNDEFINED" p0="540.0" q0="160.0" bus="BUS-5" connectableBus="BUS-5"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-6" name="ERIKSHAMN FT47">
+        <iidm:voltageLevel id="VL-6" name="ERIKSHAMN FT47_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-6" v="418.0" angle="-34.381225290313935"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-6" energySource="OTHER" minP="-1.0E-10" maxP="540.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="539.6186" targetV="418.0" targetQ="0.0" bus="BUS-6" connectableBus="BUS-6">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-6#0" energySource="OTHER" minP="-1.0E-10" maxP="540.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="539.6186" targetV="418.0" targetQ="0.0" bus="BUS-6" connectableBus="BUS-6">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-6" loadType="UNDEFINED" p0="100.0" q0="50.0" bus="BUS-6" connectableBus="BUS-6"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-7" name="HÄLLAN CT72">
+        <iidm:voltageLevel id="VL-7" name="HÄLLAN CT72_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-7" v="412.0" angle="0.0"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-7" energySource="OTHER" minP="-1.0E-10" maxP="1350.0000000001" ratedS="1500.0" voltageRegulatorOn="true" targetP="880.3918" targetV="412.0" targetQ="0.0" bus="BUS-7" connectableBus="BUS-7">
+                <iidm:minMaxReactiveLimits minQ="-100.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-7#0" energySource="OTHER" minP="-1.0E-10" maxP="1350.0000000001" ratedS="1500.0" voltageRegulatorOn="true" targetP="801.3918" targetV="412.0" targetQ="0.0" bus="BUS-7" connectableBus="BUS-7">
+                <iidm:minMaxReactiveLimits minQ="-100.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-7#1" energySource="OTHER" minP="-1.0E-10" maxP="715.0000000001" ratedS="750.0" voltageRegulatorOn="true" targetP="200.7372" targetV="412.0" targetQ="0.0" bus="BUS-7" connectableBus="BUS-7">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="200.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-7#2" energySource="OTHER" minP="-1.0E-10" maxP="715.0000000001" ratedS="750.0" voltageRegulatorOn="true" targetP="200.7372" targetV="412.0" targetQ="0.0" bus="BUS-7" connectableBus="BUS-7">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="200.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-7" loadType="UNDEFINED" p0="2000.0" q0="500.0" bus="BUS-7" connectableBus="BUS-7"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-8" name="HÄSTSJÖ RT132">
+        <iidm:voltageLevel id="VL-8" name="HÄSTSJÖ RT132_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-8" v="132.00029999999998" angle="-40.537324432080126"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-8" energySource="OTHER" minP="-1.0E-10" maxP="360.0000000001" ratedS="400.0" voltageRegulatorOn="true" targetP="359.4124" targetV="132.00029999999998" targetQ="0.0" bus="BUS-8" connectableBus="BUS-8">
+                <iidm:minMaxReactiveLimits minQ="-40.0000000001" maxQ="200.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-8#0" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="-0.0" targetV="132.00029999999998" targetQ="0.0" bus="BUS-8" connectableBus="BUS-8">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-8" loadType="UNDEFINED" p0="306.03027588134955" q0="76.06200381077701" bus="BUS-8" connectableBus="BUS-8"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-9" name="JAURAS CT71">
+        <iidm:voltageLevel id="VL-9" name="JAURAS CT71_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-9" v="411.5882352941177" angle="3.219418836716506"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-9" energySource="OTHER" minP="-1.0E-10" maxP="475.0000000001" ratedS="500.0" voltageRegulatorOn="true" targetP="300.4897" targetV="411.5882352941177" targetQ="0.0" bus="BUS-9" connectableBus="BUS-9">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="250.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-9" loadType="UNDEFINED" p0="300.0" q0="100.0" bus="BUS-9" connectableBus="BUS-9"/>
+            <iidm:shunt id="SHUNT-9" sectionCount="1" voltageRegulatorOn="false" bus="BUS-9" connectableBus="BUS-9">
+                <iidm:shuntLinearModel bPerSection="-0.0025" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-10" name="KÄRNAN FT44">
+        <iidm:voltageLevel id="VL-10" name="KÄRNAN FT44_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-10" v="420.0" angle="-32.743450441654744"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-10" energySource="OTHER" minP="-1.0E-10" maxP="630.0000000001" ratedS="700.0" voltageRegulatorOn="true" targetP="629.7217" targetV="420.0" targetQ="0.0" bus="BUS-10" connectableBus="BUS-10">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="350.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-10#0" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="170.2062" targetV="420.0" targetQ="0.0" bus="BUS-10" connectableBus="BUS-10">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-10#1" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="-0.0" targetV="420.0" targetQ="0.0" bus="BUS-10" connectableBus="BUS-10">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-10" loadType="UNDEFINED" p0="400.0" q0="150.0" bus="BUS-10" connectableBus="BUS-10"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-11" name="MITTLANDA FT45">
+        <iidm:voltageLevel id="VL-11" name="MITTLANDA FT45_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-11" v="410.1655843874668" angle="-39.05893238079809"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-11" loadType="UNDEFINED" p0="700.0" q0="250.20000000000005" bus="BUS-11" connectableBus="BUS-11"/>
+            <iidm:shunt id="SHUNT-11" sectionCount="1" voltageRegulatorOn="false" bus="BUS-11" connectableBus="BUS-11">
+                <iidm:shuntLinearModel bPerSection="6.25E-4" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-12" name="NJAGGO CT21">
+        <iidm:voltageLevel id="VL-12" name="NJAGGO CT21_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-12" v="418.87999999999994" angle="-8.554521937062242"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-12" energySource="OTHER" minP="-1.0E-10" maxP="285.0000000001" ratedS="300.0" voltageRegulatorOn="true" targetP="250.2938" targetV="418.87999999999994" targetQ="0.0" bus="BUS-12" connectableBus="BUS-12">
+                <iidm:minMaxReactiveLimits minQ="-30.0000000001" maxQ="150.0000000001"/>
+            </iidm:generator>
+            <iidm:shunt id="SHUNT-12" sectionCount="1" voltageRegulatorOn="false" bus="BUS-12" connectableBus="BUS-12">
+                <iidm:shuntLinearModel bPerSection="-9.375E-4" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-13" name="NORRSELE AT241">
+        <iidm:voltageLevel id="VL-13" name="NORRSELE AT241_220.0kV" nominalV="220.0" highVoltageLimit="440.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-13" v="241.99999999999997" angle="6.392130898071538"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-13" energySource="OTHER" minP="-1.0E-10" maxP="475.0000000001" ratedS="500.0" voltageRegulatorOn="true" targetP="450.4897" targetV="241.99999999999997" targetQ="0.0" bus="BUS-13" connectableBus="BUS-13">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="250.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-13#0" energySource="OTHER" minP="-1.0E-10" maxP="315.0000000001" ratedS="350.0" voltageRegulatorOn="true" targetP="300.3248" targetV="241.99999999999997" targetQ="0.0" bus="BUS-13" connectableBus="BUS-13">
+                <iidm:minMaxReactiveLimits minQ="-35.0000000001" maxQ="175.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-13" loadType="UNDEFINED" p0="200.0" q0="50.0" bus="BUS-13" connectableBus="BUS-13"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-14" name="NORRÅS FT42">
+        <iidm:voltageLevel id="VL-14" name="NORRÅS FT42_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-14" v="130.07319838751778" angle="-42.61252633618184"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-14" loadType="UNDEFINED" p0="800.0" q0="300.0" bus="BUS-14" connectableBus="BUS-14"/>
+            <iidm:shunt id="SHUNT-14" sectionCount="1" voltageRegulatorOn="false" bus="BUS-14" connectableBus="BUS-14">
+                <iidm:shuntLinearModel bPerSection="0.01183432" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-15" name="NORRÅS FT42_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-15" v="411.5363973939785" angle="-38.96518471784389"/>
+            </iidm:busBreakerTopology>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-15-14" name="NORRÅS FT42 400/135kV #1" r="0.0" x="1.9092440015999996" g="0.0" b="-0.0" ratedU1="425.53191489361603" ratedU2="135.0" voltageLevelId1="VL-15" bus1="BUS-15" connectableBus1="BUS-15" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="651.3"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="651.3"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+        <iidm:twoWindingsTransformer id="TWT-15-14#0" name="NORRÅS FT42 400/135kV #2" r="0.0" x="1.9092440015999996" g="0.0" b="-0.0" ratedU1="425.53191489361603" ratedU2="135.0" voltageLevelId1="VL-15" bus1="BUS-15" connectableBus1="BUS-15" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="651.3"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="651.3"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-16" name="NYSTAD RT133">
+        <iidm:voltageLevel id="VL-16" name="NYSTAD RT133_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-16" v="127.73160408260937" angle="-55.90631931437962"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-16" loadType="UNDEFINED" p0="605.2641576811575" q0="74.38227010765013" bus="BUS-16" connectableBus="BUS-16"/>
+            <iidm:shunt id="SHUNT-16" sectionCount="1" voltageRegulatorOn="false" bus="BUS-16" connectableBus="BUS-16">
+                <iidm:shuntLinearModel bPerSection="0.004142012" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-17" name="OLMÅFALLET AT121">
+        <iidm:voltageLevel id="VL-17" name="OLMÅFALLET AT121_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-17" v="150.79976470588235" angle="16.967290028183573"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-17" energySource="OTHER" minP="-1.0E-10" maxP="665.0000000001" ratedS="700.0" voltageRegulatorOn="true" targetP="400.6856" targetV="150.79976470588235" targetQ="0.0" bus="BUS-17" connectableBus="BUS-17">
+                <iidm:minMaxReactiveLimits minQ="-100.0000000001" maxQ="350.0000000001"/>
+            </iidm:generator>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-18" name="RUTHUVUD FT62">
+        <iidm:voltageLevel id="VL-18" name="RUTHUVUD FT62_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-18" v="412.0" angle="-26.331311578942003"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-18" energySource="OTHER" minP="-1.0E-10" maxP="540.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="530.6186" targetV="412.0" targetQ="0.0" bus="BUS-18" connectableBus="BUS-18">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-18#0" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="160.2062" targetV="412.0" targetQ="0.0" bus="BUS-18" connectableBus="BUS-18">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-18#1" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="-0.0" targetV="412.0" targetQ="0.0" bus="BUS-18" connectableBus="BUS-18">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-18" loadType="UNDEFINED" p0="300.0" q0="85.0" bus="BUS-18" connectableBus="BUS-18"/>
+            <iidm:shunt id="SHUNT-18" sectionCount="1" voltageRegulatorOn="false" bus="BUS-18" connectableBus="BUS-18">
+                <iidm:shuntLinearModel bPerSection="-6.25E-4" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-19" name="STENFORSEN CT31">
+        <iidm:voltageLevel id="VL-19" name="STENFORSEN CT31_220.0kV" nominalV="220.0" highVoltageLimit="440.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-19" v="231.4831746413871" angle="-7.422457567775838"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-19" loadType="UNDEFINED" p0="100.0" q0="30.0" bus="BUS-19" connectableBus="BUS-19"/>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-20" name="STENFORSEN CT31_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-20" v="411.7647058823529" angle="-10.254784270432522"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-20" energySource="OTHER" minP="-1.0E-10" maxP="332.5000000001" ratedS="350.0" voltageRegulatorOn="true" targetP="310.3428" targetV="411.7647058823529" targetQ="0.0" bus="BUS-20" connectableBus="BUS-20">
+                <iidm:minMaxReactiveLimits minQ="-40.0000000001" maxQ="175.0000000001"/>
+            </iidm:generator>
+            <iidm:shunt id="SHUNT-20" sectionCount="1" voltageRegulatorOn="false" bus="BUS-20" connectableBus="BUS-20">
+                <iidm:shuntLinearModel bPerSection="-6.25E-4" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-20-19" name="STENFORSEN CT31 400/220kV" r="0.0" x="6.158118378720003" g="0.0" b="-0.0" ratedU1="388.46265902690106" ratedU2="220.0" voltageLevelId1="VL-20" bus1="BUS-20" connectableBus1="BUS-20" voltageLevelId2="VL-19" bus2="BUS-19" connectableBus2="BUS-19" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-21" name="STORFORS AT131">
+        <iidm:voltageLevel id="VL-21" name="STORFORS AT131_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-21" v="142.9999411764706" angle="27.49687951570203"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-21" energySource="OTHER" minP="-1.0E-10" maxP="570.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="400.5876" targetV="142.9999411764706" targetQ="0.0" bus="BUS-21" connectableBus="BUS-21">
+                <iidm:minMaxReactiveLimits minQ="-60.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-22" name="STORTRÄSK CT22">
+        <iidm:voltageLevel id="VL-22" name="STORTRÄSK CT22_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-22" v="138.00017647058823" angle="2.8336419913772413"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-22" energySource="OTHER" minP="-1.0E-10" maxP="237.5000000001" ratedS="250.0" voltageRegulatorOn="true" targetP="200.2449" targetV="138.00017647058823" targetQ="0.0" bus="BUS-22" connectableBus="BUS-22">
+                <iidm:minMaxReactiveLimits minQ="-25.0000000001" maxQ="125.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-22" loadType="UNDEFINED" p0="280.0" q0="95.0" bus="BUS-22" connectableBus="BUS-22"/>
+            <iidm:shunt id="SHUNT-22" sectionCount="1" voltageRegulatorOn="false" bus="BUS-22" connectableBus="BUS-22">
+                <iidm:shuntLinearModel bPerSection="0.0029585799999999997" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-23" name="STORTRÄSK CT22_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-23" v="414.64236196717775" angle="0.8951651652214451"/>
+            </iidm:busBreakerTopology>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-23-22" name="STORTRÄSK CT22 400/135kV" r="0.0" x="2.2340521896300007" g="0.0" b="-0.0" ratedU1="395.7653111704759" ratedU2="135.0" voltageLevelId1="VL-23" bus1="BUS-23" connectableBus1="BUS-23" voltageLevelId2="VL-22" bus2="BUS-22" connectableBus2="BUS-22" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-24" name="STUPET CT12">
+        <iidm:voltageLevel id="VL-24" name="STUPET CT12_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-24" v="146.89985294117648" angle="10.176944348854523"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-24" energySource="OTHER" minP="-1.0E-10" maxP="285.0000000001" ratedS="300.0" voltageRegulatorOn="true" targetP="50.0" targetV="146.89985294117648" targetQ="0.0" bus="BUS-24" connectableBus="BUS-24">
+                <iidm:minMaxReactiveLimits minQ="-30.0000000001" maxQ="150.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-24#0" energySource="OTHER" minP="-1.0E-10" maxP="475.0000000001" ratedS="500.0" voltageRegulatorOn="true" targetP="400.4897" targetV="146.89985294117648" targetQ="0.0" bus="BUS-24" connectableBus="BUS-24">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="250.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-24" loadType="UNDEFINED" p0="300.0" q0="100.0" bus="BUS-24" connectableBus="BUS-24"/>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-25" name="STUPET CT12_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-25" v="435.25882352941176" angle="8.424197478242709"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-25" energySource="OTHER" minP="-1.0E-10" maxP="475.0000000001" ratedS="500.0" voltageRegulatorOn="true" targetP="400.4897" targetV="435.25882352941176" targetQ="0.0" bus="BUS-25" connectableBus="BUS-25">
+                <iidm:minMaxReactiveLimits minQ="-199.0000000001" maxQ="250.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-25#0" energySource="OTHER" minP="-1.0E-10" maxP="285.0000000001" ratedS="300.0" voltageRegulatorOn="true" targetP="100.2938" targetV="435.25882352941176" targetQ="0.0" bus="BUS-25" connectableBus="BUS-25">
+                <iidm:minMaxReactiveLimits minQ="-60.0000000001" maxQ="150.0000000001"/>
+            </iidm:generator>
+            <iidm:shunt id="SHUNT-25" sectionCount="1" voltageRegulatorOn="false" bus="BUS-25" connectableBus="BUS-25">
+                <iidm:shuntLinearModel bPerSection="-0.00125" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-25-24" name="STUPET CT12 400/135kV" r="0.0" x="1.635119298" g="0.0" b="-0.0" ratedU1="377.7148253068933" ratedU2="135.0" voltageLevelId1="VL-25" bus1="BUS-25" connectableBus1="BUS-25" voltageLevelId2="VL-24" bus2="BUS-24" connectableBus2="BUS-24" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-26" name="SYDBÄCK FT63">
+        <iidm:voltageLevel id="VL-26" name="SYDBÄCK FT63_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-26" v="420.0" angle="-22.669537252143883"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-26" energySource="OTHER" minP="-1.0E-10" maxP="540.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="530.6186" targetV="420.0" targetQ="0.0" bus="BUS-26" connectableBus="BUS-26">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:generator id="GEN-26#0" energySource="OTHER" minP="-1.0E-10" maxP="540.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="530.6186" targetV="420.0" targetQ="0.0" bus="BUS-26" connectableBus="BUS-26">
+                <iidm:minMaxReactiveLimits minQ="-1.0E-10" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-26" loadType="UNDEFINED" p0="590.0" q0="300.0" bus="BUS-26" connectableBus="BUS-26"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-27" name="SYDKÖPING FT50">
+        <iidm:voltageLevel id="VL-27" name="SYDKÖPING FT50_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-27" v="129.8557209886826" angle="-44.899249536852956"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-27" loadType="UNDEFINED" p0="730.5515262188164" q0="252.1859699408633" bus="BUS-27" connectableBus="BUS-27"/>
+            <iidm:shunt id="SHUNT-27" sectionCount="1" voltageRegulatorOn="false" bus="BUS-27" connectableBus="BUS-27">
+                <iidm:shuntLinearModel bPerSection="0.011834319999999999" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+        <iidm:voltageLevel id="VL-28" name="SYDKÖPING FT50_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-28" v="411.50170630618595" angle="-41.608589731476854"/>
+            </iidm:busBreakerTopology>
+        </iidm:voltageLevel>
+        <iidm:twoWindingsTransformer id="TWT-28-27" name="SYDKÖPING FT50 400/135kV #1" r="0.0" x="1.9092440015999996" g="0.0" b="-0.0" ratedU1="425.53191489361603" ratedU2="135.0" voltageLevelId1="VL-28" bus1="BUS-28" connectableBus1="BUS-28" voltageLevelId2="VL-27" bus2="BUS-27" connectableBus2="BUS-27" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1094.7"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1094.7"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+        <iidm:twoWindingsTransformer id="TWT-28-27#0" name="SYDKÖPING FT50 400/135kV #2" r="0.0" x="1.9092440015999996" g="0.0" b="-0.0" ratedU1="425.53191489361603" ratedU2="135.0" voltageLevelId1="VL-28" bus1="BUS-28" connectableBus1="BUS-28" voltageLevelId2="VL-27" bus2="BUS-27" connectableBus2="BUS-27" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+            <iidm:operationalLimitsGroup1 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1094.7"/>
+            </iidm:operationalLimitsGroup1>
+            <iidm:operationalLimitsGroup2 id="DEFAULT">
+                <iidm:apparentPowerLimits permanentLimit="1094.7"/>
+            </iidm:operationalLimitsGroup2>
+        </iidm:twoWindingsTransformer>
+    </iidm:substation>
+    <iidm:substation id="SUB-29" name="TORNÅ CT32">
+        <iidm:voltageLevel id="VL-29" name="TORNÅ CT32_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-29" v="415.9521818473694" angle="-14.495863488954779"/>
+            </iidm:busBreakerTopology>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-30" name="UPPMARK FT43">
+        <iidm:voltageLevel id="VL-30" name="UPPMARK FT43_400.0kV" nominalV="400.0" highVoltageLimit="800.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-30" v="411.8775527709643" angle="-38.46477989278469"/>
+            </iidm:busBreakerTopology>
+            <iidm:load id="LOAD-30" loadType="UNDEFINED" p0="900.0" q0="303.0" bus="BUS-30" connectableBus="BUS-30"/>
+            <iidm:shunt id="SHUNT-30" sectionCount="1" voltageRegulatorOn="false" bus="BUS-30" connectableBus="BUS-30">
+                <iidm:shuntLinearModel bPerSection="0.00125" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-31" name="VATTENDRAGET AT111">
+        <iidm:voltageLevel id="VL-31" name="VATTENDRAGET AT111_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-31" v="148.85020588235295" angle="15.468251521490446"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-31" energySource="OTHER" minP="-1.0E-10" maxP="570.0000000001" ratedS="600.0" voltageRegulatorOn="true" targetP="350.0" targetV="148.85020588235295" targetQ="0.0" bus="BUS-31" connectableBus="BUS-31">
+                <iidm:minMaxReactiveLimits minQ="-50.0000000001" maxQ="300.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-31" loadType="UNDEFINED" p0="100.0" q0="40.0" bus="BUS-31" connectableBus="BUS-31"/>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:substation id="SUB-32" name="YTTERFORSEN RT131">
+        <iidm:voltageLevel id="VL-32" name="YTTERFORSEN RT131_135.0kV" nominalV="135.0" highVoltageLimit="270.0" topologyKind="BUS_BREAKER">
+            <iidm:busBreakerTopology>
+                <iidm:bus id="BUS-32" v="131.99982352941177" angle="-50.892025491711834"/>
+            </iidm:busBreakerTopology>
+            <iidm:generator id="GEN-32" energySource="OTHER" minP="-1.0E-10" maxP="180.0000000001" ratedS="200.0" voltageRegulatorOn="true" targetP="180.0" targetV="131.99982352941177" targetQ="0.0" bus="BUS-32" connectableBus="BUS-32">
+                <iidm:minMaxReactiveLimits minQ="-20.0000000001" maxQ="100.0000000001"/>
+            </iidm:generator>
+            <iidm:load id="LOAD-32" loadType="UNDEFINED" p0="229.3742672966073" q0="0.4909948160748172" bus="BUS-32" connectableBus="BUS-32"/>
+            <iidm:shunt id="SHUNT-32" sectionCount="1" voltageRegulatorOn="false" bus="BUS-32" connectableBus="BUS-32">
+                <iidm:shuntLinearModel bPerSection="0.00591716" gPerSection="0.0" maximumSectionCount="1"/>
+            </iidm:shunt>
+        </iidm:voltageLevel>
+    </iidm:substation>
+    <iidm:line id="LINE-8-14" name="HÄSTSJÖ RT132 - NORRÅS FT42 135kV #1" r="6.42249" x="47.31939" g1="0.0" b1="1.75583E-4" g2="0.0" b2="1.75583E-4" voltageLevelId1="VL-8" bus1="BUS-8" connectableBus1="BUS-8" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-25-9" name="STUPET CT12 - JAURAS CT71 400kV" r="8.0" x="80.0" g1="0.0" b1="4.6875E-4" g2="0.0" b2="4.6875E-4" voltageLevelId1="VL-25" bus1="BUS-25" connectableBus1="BUS-25" voltageLevelId2="VL-9" bus2="BUS-9" connectableBus2="BUS-9" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-29-10" name="TORNÅ CT32 - KÄRNAN FT44 400kV" r="16.0" x="106.72" g1="0.0" b1="6.25E-4" g2="0.0" b2="6.25E-4" voltageLevelId1="VL-29" bus1="BUS-29" connectableBus1="BUS-29" voltageLevelId2="VL-10" bus2="BUS-10" connectableBus2="BUS-10" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-8-27" name="HÄSTSJÖ RT132 - SYDKÖPING FT50 135kV" r="8.44911" x="50.70013" g1="0.0" b1="1.75583E-4" g2="0.0" b2="1.75583E-4" voltageLevelId1="VL-8" bus1="BUS-8" connectableBus1="BUS-8" voltageLevelId2="VL-27" bus2="BUS-27" connectableBus2="BUS-27" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-20-29" name="STENFORSEN CT31 - TORNÅ CT32 400kV" r="1.6" x="16.0" g1="0.0" b1="9.374999999999999E-5" g2="0.0" b2="9.374999999999999E-5" voltageLevelId1="VL-20" bus1="BUS-20" connectableBus1="BUS-20" voltageLevelId2="VL-29" bus2="BUS-29" connectableBus2="BUS-29" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2494.2"/>
+            <iidm:apparentPowerLimits permanentLimit="2494.2"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2494.2"/>
+            <iidm:apparentPowerLimits permanentLimit="2494.2"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-2-25" name="AGGAN CT11 - STUPET CT12 400kV" r="1.6" x="12.8" g1="0.0" b1="6.25E-5" g2="0.0" b2="6.25E-5" voltageLevelId1="VL-2" bus1="BUS-2" connectableBus1="BUS-2" voltageLevelId2="VL-25" bus2="BUS-25" connectableBus2="BUS-25" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2494.2"/>
+            <iidm:apparentPowerLimits permanentLimit="2494.2"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2494.2"/>
+            <iidm:apparentPowerLimits permanentLimit="2494.2"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-23-20" name="STORTRÄSK CT22 - STENFORSEN CT31 400kV #1" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-23" bus1="BUS-23" connectableBus1="BUS-23" voltageLevelId2="VL-20" bus2="BUS-20" connectableBus2="BUS-20" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-25-23" name="STUPET CT12 - STORTRÄSK CT22 400kV" r="6.4" x="55.99999999999999" g1="0.0" b1="3.28125E-4" g2="0.0" b2="3.28125E-4" voltageLevelId1="VL-25" bus1="BUS-25" connectableBus1="BUS-25" voltageLevelId2="VL-23" bus2="BUS-23" connectableBus2="BUS-23" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-11-6" name="MITTLANDA FT45 - ERIKSHAMN FT47 400kV" r="1.6" x="24.0" g1="0.0" b1="1.5625E-4" g2="0.0" b2="1.5625E-4" voltageLevelId1="VL-11" bus1="BUS-11" connectableBus1="BUS-11" voltageLevelId2="VL-6" bus2="BUS-6" connectableBus2="BUS-6" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-32-14" name="YTTERFORSEN RT131 - NORRÅS FT42 135kV #1" r="1.689458" x="13.51931" g1="0.0" b1="4.9382715E-5" g2="0.0" b2="4.9382715E-5" voltageLevelId1="VL-32" bus1="BUS-32" connectableBus1="BUS-32" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-18-26" name="RUTHUVUD FT62 - SYDBÄCK FT63 400kV #1" r="4.8" x="48.0" g1="0.0" b1="2.8125E-4" g2="0.0" b2="2.8125E-4" voltageLevelId1="VL-18" bus1="BUS-18" connectableBus1="BUS-18" voltageLevelId2="VL-26" bus2="BUS-26" connectableBus2="BUS-26" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-10-30" name="KÄRNAN FT44 - UPPMARK FT43 400kV" r="3.2" x="24.0" g1="0.0" b1="1.5625E-4" g2="0.0" b2="1.5625E-4" voltageLevelId1="VL-10" bus1="BUS-10" connectableBus1="BUS-10" voltageLevelId2="VL-30" bus2="BUS-30" connectableBus2="BUS-30" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-30-15" name="UPPMARK FT43 - NORRÅS FT42 400kV" r="1.6" x="16.0" g1="0.0" b1="9.374999999999999E-5" g2="0.0" b2="9.374999999999999E-5" voltageLevelId1="VL-30" bus1="BUS-30" connectableBus1="BUS-30" voltageLevelId2="VL-15" bus2="BUS-15" connectableBus2="BUS-15" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-15-28" name="NORRÅS FT42 - SYDKÖPING FT50 400kV #1" r="3.2" x="32.0" g1="0.0" b1="1.8749999999999998E-4" g2="0.0" b2="1.8749999999999998E-4" voltageLevelId1="VL-15" bus1="BUS-15" connectableBus1="BUS-15" voltageLevelId2="VL-28" bus2="BUS-28" connectableBus2="BUS-28" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-30-11" name="UPPMARK FT43 - MITTLANDA FT45 400kV" r="1.6" x="16.0" g1="0.0" b1="9.374999999999999E-5" g2="0.0" b2="9.374999999999999E-5" voltageLevelId1="VL-30" bus1="BUS-30" connectableBus1="BUS-30" voltageLevelId2="VL-11" bus2="BUS-11" connectableBus2="BUS-11" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-3-18" name="ATOMSBERG FT61 - RUTHUVUD FT62 400kV" r="3.2" x="32.0" g1="0.0" b1="1.8749999999999998E-4" g2="0.0" b2="1.8749999999999998E-4" voltageLevelId1="VL-3" bus1="BUS-3" connectableBus1="BUS-3" voltageLevelId2="VL-18" bus2="BUS-18" connectableBus2="BUS-18" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2057.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2057.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2057.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2057.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-24-17" name="STUPET CT12 - OLMÅFALLET AT121 135kV #1" r="2.9433379999999993" x="18.92302" g1="0.0" b1="4.3895745000000004E-5" g2="0.0" b2="4.3895745000000004E-5" voltageLevelId1="VL-24" bus1="BUS-24" connectableBus1="BUS-24" voltageLevelId2="VL-17" bus2="BUS-17" connectableBus2="BUS-17" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-16-32" name="NYSTAD RT133 - YTTERFORSEN RT131 135kV #1" r="1.689458" x="10.14039" g1="0.0" b1="3.2921815E-5" g2="0.0" b2="3.2921815E-5" voltageLevelId1="VL-16" bus1="BUS-16" connectableBus1="BUS-16" voltageLevelId2="VL-32" bus2="BUS-32" connectableBus2="BUS-32" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="694.5"/>
+            <iidm:apparentPowerLimits permanentLimit="694.5"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="694.5"/>
+            <iidm:apparentPowerLimits permanentLimit="694.5"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-18-26#0" name="RUTHUVUD FT62 - SYDBÄCK FT63 400kV #2" r="4.8" x="48.0" g1="0.0" b1="2.8125E-4" g2="0.0" b2="2.8125E-4" voltageLevelId1="VL-18" bus1="BUS-18" connectableBus1="BUS-18" voltageLevelId2="VL-26" bus2="BUS-26" connectableBus2="BUS-26" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-15-28#0" name="NORRÅS FT42 - SYDKÖPING FT50 400kV #2" r="3.2" x="32.0" g1="0.0" b1="1.8749999999999998E-4" g2="0.0" b2="1.8749999999999998E-4" voltageLevelId1="VL-15" bus1="BUS-15" connectableBus1="BUS-15" voltageLevelId2="VL-28" bus2="BUS-28" connectableBus2="BUS-28" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2050.7"/>
+            <iidm:apparentPowerLimits permanentLimit="2050.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-5-3" name="DALBO FT41 - ATOMSBERG FT61 400kV" r="9.599998999999999" x="72.0" g1="0.0" b1="4.0625E-4" g2="0.0" b2="4.0625E-4" voltageLevelId1="VL-5" bus1="BUS-5" connectableBus1="BUS-5" voltageLevelId2="VL-3" bus2="BUS-3" connectableBus2="BUS-3" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-20-5" name="STENFORSEN CT31 - DALBO FT41 400kV #1" r="9.599998999999999" x="128.0" g1="0.0" b1="7.499999999999999E-4" g2="0.0" b2="7.499999999999999E-4" voltageLevelId1="VL-20" bus1="BUS-20" connectableBus1="BUS-20" voltageLevelId2="VL-5" bus2="BUS-5" connectableBus2="BUS-5" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-12-29" name="NJAGGO CT21 - TORNÅ CT32 400kV" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-12" bus1="BUS-12" connectableBus1="BUS-12" voltageLevelId2="VL-29" bus2="BUS-29" connectableBus2="BUS-29" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-31-17" name="VATTENDRAGET AT111 - OLMÅFALLET AT121 135kV #1" r="2.103165" x="10.51218" g1="0.0" b1="2.1947875E-5" g2="0.0" b2="2.1947875E-5" voltageLevelId1="VL-31" bus1="BUS-31" connectableBus1="BUS-31" voltageLevelId2="VL-17" bus2="BUS-17" connectableBus2="BUS-17" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="250.2"/>
+            <iidm:apparentPowerLimits permanentLimit="250.2"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="250.2"/>
+            <iidm:apparentPowerLimits permanentLimit="250.2"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-10-15" name="KÄRNAN FT44 - NORRÅS FT42 400kV" r="3.2" x="32.0" g1="0.0" b1="1.8749999999999998E-4" g2="0.0" b2="1.8749999999999998E-4" voltageLevelId1="VL-10" bus1="BUS-10" connectableBus1="BUS-10" voltageLevelId2="VL-15" bus2="BUS-15" connectableBus2="BUS-15" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-1-31" name="AGGAN CT11 - VATTENDRAGET AT111 135kV #1" r="2.103165" x="14.71669" g1="0.0" b1="3.2921815E-5" g2="0.0" b2="3.2921815E-5" voltageLevelId1="VL-1" bus1="BUS-1" connectableBus1="BUS-1" voltageLevelId2="VL-31" bus2="BUS-31" connectableBus2="BUS-31" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="491.0"/>
+            <iidm:apparentPowerLimits permanentLimit="491.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="491.0"/>
+            <iidm:apparentPowerLimits permanentLimit="491.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-24-17#0" name="STUPET CT12 - OLMÅFALLET AT121 135kV #2" r="2.9433379999999993" x="18.92302" g1="0.0" b1="4.3895745000000004E-5" g2="0.0" b2="4.3895745000000004E-5" voltageLevelId1="VL-24" bus1="BUS-24" connectableBus1="BUS-24" voltageLevelId2="VL-17" bus2="BUS-17" connectableBus2="BUS-17" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-19-13" name="STENFORSEN CT31 - NORRSELE AT241 220kV #1" r="6.62596" x="49.70197000000001" g1="0.0" b1="1.3636365E-4" g2="0.0" b2="1.3636365E-4" voltageLevelId1="VL-19" bus1="BUS-19" connectableBus1="BUS-19" voltageLevelId2="VL-13" bus2="BUS-13" connectableBus2="BUS-13" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="583.0"/>
+            <iidm:apparentPowerLimits permanentLimit="583.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="583.0"/>
+            <iidm:apparentPowerLimits permanentLimit="583.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-16-27" name="NYSTAD RT133 - SYDKÖPING FT50 135kV #1" r="2.535098" x="20.28078" g1="0.0" b1="7.13306E-5" g2="0.0" b2="7.13306E-5" voltageLevelId1="VL-16" bus1="BUS-16" connectableBus1="BUS-16" voltageLevelId2="VL-27" bus2="BUS-27" connectableBus2="BUS-27" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-16-27#0" name="NYSTAD RT133 - SYDKÖPING FT50 135kV #2" r="2.535098" x="20.28078" g1="0.0" b1="7.13306E-5" g2="0.0" b2="7.13306E-5" voltageLevelId1="VL-16" bus1="BUS-16" connectableBus1="BUS-16" voltageLevelId2="VL-27" bus2="BUS-27" connectableBus2="BUS-27" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-28-4" name="SYDKÖPING FT50 - BLOCKET FT51 400kV #1" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-28" bus1="BUS-28" connectableBus1="BUS-28" voltageLevelId2="VL-4" bus2="BUS-4" connectableBus2="BUS-4" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-9-7" name="JAURAS CT71 - HÄLLAN CT72 400kV #1" r="4.8" x="48.0" g1="0.0" b1="6.25E-4" g2="0.0" b2="6.25E-4" voltageLevelId1="VL-9" bus1="BUS-9" connectableBus1="BUS-9" voltageLevelId2="VL-7" bus2="BUS-7" connectableBus2="BUS-7" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2078.5"/>
+            <iidm:apparentPowerLimits permanentLimit="2078.5"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2078.5"/>
+            <iidm:apparentPowerLimits permanentLimit="2078.5"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-29-15" name="TORNÅ CT32 - NORRÅS FT42 400kV" r="9.599998999999999" x="133.28" g1="0.0" b1="7.499999999999999E-4" g2="0.0" b2="7.499999999999999E-4" voltageLevelId1="VL-29" bus1="BUS-29" connectableBus1="BUS-29" voltageLevelId2="VL-15" bus2="BUS-15" connectableBus2="BUS-15" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-28-18" name="SYDKÖPING FT50 - RUTHUVUD FT62 400kV" r="17.6" x="128.0" g1="0.0" b1="7.499999999999999E-4" g2="0.0" b2="7.499999999999999E-4" voltageLevelId1="VL-28" bus1="BUS-28" connectableBus1="BUS-28" voltageLevelId2="VL-18" bus2="BUS-18" connectableBus2="BUS-18" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-9-7#0" name="JAURAS CT71 - HÄLLAN CT72 400kV #2" r="4.8" x="48.0" g1="0.0" b1="6.25E-4" g2="0.0" b2="6.25E-4" voltageLevelId1="VL-9" bus1="BUS-9" connectableBus1="BUS-9" voltageLevelId2="VL-7" bus2="BUS-7" connectableBus2="BUS-7" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2078.5"/>
+            <iidm:apparentPowerLimits permanentLimit="2078.5"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="2078.5"/>
+            <iidm:apparentPowerLimits permanentLimit="2078.5"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-16-32#0" name="NYSTAD RT133 - YTTERFORSEN RT131 135kV #2" r="1.689458" x="10.14039" g1="0.0" b1="3.2921815E-5" g2="0.0" b2="3.2921815E-5" voltageLevelId1="VL-16" bus1="BUS-16" connectableBus1="BUS-16" voltageLevelId2="VL-32" bus2="BUS-32" connectableBus2="BUS-32" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="694.5"/>
+            <iidm:apparentPowerLimits permanentLimit="694.5"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="694.5"/>
+            <iidm:apparentPowerLimits permanentLimit="694.5"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-20-5#0" name="STENFORSEN CT31 - DALBO FT41 400kV #2" r="9.599998999999999" x="128.0" g1="0.0" b1="7.499999999999999E-4" g2="0.0" b2="7.499999999999999E-4" voltageLevelId1="VL-20" bus1="BUS-20" connectableBus1="BUS-20" voltageLevelId2="VL-5" bus2="BUS-5" connectableBus2="BUS-5" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-32-14#0" name="YTTERFORSEN RT131 - NORRÅS FT42 135kV #2" r="1.689458" x="13.51931" g1="0.0" b1="4.9382715E-5" g2="0.0" b2="4.9382715E-5" voltageLevelId1="VL-32" bus1="BUS-32" connectableBus1="BUS-32" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-12-10" name="NJAGGO CT21 - KÄRNAN FT44 400kV" r="16.0" x="160.0" g1="0.0" b1="9.375E-4" g2="0.0" b2="9.375E-4" voltageLevelId1="VL-12" bus1="BUS-12" connectableBus1="BUS-12" voltageLevelId2="VL-10" bus2="BUS-10" connectableBus2="BUS-10" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-1-31#0" name="AGGAN CT11 - VATTENDRAGET AT111 135kV #2" r="2.103165" x="14.71669" g1="0.0" b1="3.2921815E-5" g2="0.0" b2="3.2921815E-5" voltageLevelId1="VL-1" bus1="BUS-1" connectableBus1="BUS-1" voltageLevelId2="VL-31" bus2="BUS-31" connectableBus2="BUS-31" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="491.0"/>
+            <iidm:apparentPowerLimits permanentLimit="491.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="491.0"/>
+            <iidm:apparentPowerLimits permanentLimit="491.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-21-22" name="STORFORS AT131 - STORTRÄSK CT22 135kV #1" r="6.307673" x="42.05054" g1="0.0" b1="7.13306E-5" g2="0.0" b2="7.13306E-5" voltageLevelId1="VL-21" bus1="BUS-21" connectableBus1="BUS-21" voltageLevelId2="VL-22" bus2="BUS-22" connectableBus2="BUS-22" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-2-9" name="AGGAN CT11 - JAURAS CT71 400kV" r="8.0" x="72.0" g1="0.0" b1="4.375E-4" g2="0.0" b2="4.375E-4" voltageLevelId1="VL-2" bus1="BUS-2" connectableBus1="BUS-2" voltageLevelId2="VL-9" bus2="BUS-9" connectableBus2="BUS-9" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="706.7"/>
+            <iidm:apparentPowerLimits permanentLimit="706.7"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-28-4#0" name="SYDKÖPING FT50 - BLOCKET FT51 400kV #2" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-28" bus1="BUS-28" connectableBus1="BUS-28" voltageLevelId2="VL-4" bus2="BUS-4" connectableBus2="BUS-4" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-21-22#0" name="STORFORS AT131 - STORTRÄSK CT22 135kV #2" r="6.307673" x="42.05054" g1="0.0" b1="7.13306E-5" g2="0.0" b2="7.13306E-5" voltageLevelId1="VL-21" bus1="BUS-21" connectableBus1="BUS-21" voltageLevelId2="VL-22" bus2="BUS-22" connectableBus2="BUS-22" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-2-12" name="AGGAN CT11 - NJAGGO CT21 400kV" r="9.599998999999999" x="96.0" g1="0.0" b1="5.625E-4" g2="0.0" b2="5.625E-4" voltageLevelId1="VL-2" bus1="BUS-2" connectableBus1="BUS-2" voltageLevelId2="VL-12" bus2="BUS-12" connectableBus2="BUS-12" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-19-13#0" name="STENFORSEN CT31 - NORRSELE AT241 220kV #2" r="6.62596" x="49.70197000000001" g1="0.0" b1="1.3636365E-4" g2="0.0" b2="1.3636365E-4" voltageLevelId1="VL-19" bus1="BUS-19" connectableBus1="BUS-19" voltageLevelId2="VL-13" bus2="BUS-13" connectableBus2="BUS-13" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="583.0"/>
+            <iidm:apparentPowerLimits permanentLimit="583.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="583.0"/>
+            <iidm:apparentPowerLimits permanentLimit="583.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-5-15" name="DALBO FT41 - NORRÅS FT42 400kV" r="4.8" x="48.0" g1="0.0" b1="2.8125E-4" g2="0.0" b2="2.8125E-4" voltageLevelId1="VL-5" bus1="BUS-5" connectableBus1="BUS-5" voltageLevelId2="VL-15" bus2="BUS-15" connectableBus2="BUS-15" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-31-17#0" name="VATTENDRAGET AT111 - OLMÅFALLET AT121 135kV #2" r="2.103165" x="10.51218" g1="0.0" b1="2.1947875E-5" g2="0.0" b2="2.1947875E-5" voltageLevelId1="VL-31" bus1="BUS-31" connectableBus1="BUS-31" voltageLevelId2="VL-17" bus2="BUS-17" connectableBus2="BUS-17" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="250.2"/>
+            <iidm:apparentPowerLimits permanentLimit="250.2"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="250.2"/>
+            <iidm:apparentPowerLimits permanentLimit="250.2"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-30-6" name="UPPMARK FT43 - ERIKSHAMN FT47 400kV" r="3.2" x="32.0" g1="0.0" b1="1.8749999999999998E-4" g2="0.0" b2="1.8749999999999998E-4" voltageLevelId1="VL-30" bus1="BUS-30" connectableBus1="BUS-30" voltageLevelId2="VL-6" bus2="BUS-6" connectableBus2="BUS-6" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-23-20#0" name="STORTRÄSK CT22 - STENFORSEN CT31 400kV #2" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-23" bus1="BUS-23" connectableBus1="BUS-23" voltageLevelId2="VL-20" bus2="BUS-20" connectableBus2="BUS-20" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-8-14#0" name="HÄSTSJÖ RT132 - NORRÅS FT42 135kV #2" r="6.42249" x="47.31939" g1="0.0" b1="1.75583E-4" g2="0.0" b2="1.75583E-4" voltageLevelId1="VL-8" bus1="BUS-8" connectableBus1="BUS-8" voltageLevelId2="VL-14" bus2="BUS-14" connectableBus2="BUS-14" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="357.8"/>
+            <iidm:apparentPowerLimits permanentLimit="357.8"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:line id="LINE-2-23" name="AGGAN CT11 - STORTRÄSK CT22 400kV" r="6.4" x="64.0" g1="0.0" b1="3.7499999999999995E-4" g2="0.0" b2="3.7499999999999995E-4" voltageLevelId1="VL-2" bus1="BUS-2" connectableBus1="BUS-2" voltageLevelId2="VL-23" bus2="BUS-23" connectableBus2="BUS-23" selectedOperationalLimitsGroupId1="DEFAULT" selectedOperationalLimitsGroupId2="DEFAULT">
+        <iidm:operationalLimitsGroup1 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup1>
+        <iidm:operationalLimitsGroup2 id="DEFAULT">
+            <iidm:activePowerLimits permanentLimit="1060.0"/>
+            <iidm:apparentPowerLimits permanentLimit="1060.0"/>
+        </iidm:operationalLimitsGroup2>
+    </iidm:line>
+    <iidm:extension id="SUB-12">
+        <sp:substationPosition>
+            <sp:coordinate longitude="19.487919" latitude="64.956333"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-13">
+        <sp:substationPosition>
+            <sp:coordinate longitude="11.420925" latitude="63.574554"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-10">
+        <sp:substationPosition>
+            <sp:coordinate longitude="16.282421" latitude="60.656389"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-11">
+        <sp:substationPosition>
+            <sp:coordinate longitude="18.082421" latitude="60.056389"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-18">
+        <sp:substationPosition>
+            <sp:coordinate longitude="13.494514" latitude="57.035525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-19">
+        <sp:substationPosition>
+            <sp:coordinate longitude="13.898688" latitude="63.574554"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-16">
+        <sp:substationPosition>
+            <sp:coordinate longitude="15.202903" latitude="58.635525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-17">
+        <sp:substationPosition>
+            <sp:coordinate longitude="16.544969" latitude="67.05019"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-14">
+        <sp:substationPosition>
+            <sp:coordinate longitude="14.402903" latitude="59.835525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="VL-7">
+        <slt:slackTerminal id="LOAD-7"/>
+    </iidm:extension>
+    <iidm:extension id="SUB-32">
+        <sp:substationPosition>
+            <sp:coordinate longitude="14.902903" latitude="59.235525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-30">
+        <sp:substationPosition>
+            <sp:coordinate longitude="16.282421" latitude="60.056389"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-31">
+        <sp:substationPosition>
+            <sp:coordinate longitude="17.475847" latitude="68.019844"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-24">
+        <sp:substationPosition>
+            <sp:coordinate longitude="15.338445" latitude="66.056051"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-21">
+        <sp:substationPosition>
+            <sp:coordinate longitude="12.203632" latitude="64.956333"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-22">
+        <sp:substationPosition>
+            <sp:coordinate longitude="15.049038" latitude="64.956333"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-6">
+        <sp:substationPosition>
+            <sp:coordinate longitude="17.182421" latitude="59.656389"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-5">
+        <sp:substationPosition>
+            <sp:coordinate longitude="14.002903" latitude="60.235525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-8">
+        <sp:substationPosition>
+            <sp:coordinate longitude="16.502903" latitude="58.535525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-7">
+        <sp:substationPosition>
+            <sp:coordinate longitude="27.312569" latitude="65.386818"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-9">
+        <sp:substationPosition>
+            <sp:coordinate longitude="26.607238" latitude="67.387671"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-29">
+        <sp:substationPosition>
+            <sp:coordinate longitude="17.282421" latitude="63.574554"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-27">
+        <sp:substationPosition>
+            <sp:coordinate longitude="14.002903" latitude="58.035525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-1">
+        <sp:substationPosition>
+            <sp:coordinate longitude="19.827881" latitude="67.8"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-4">
+        <sp:substationPosition>
+            <sp:coordinate longitude="16.502903" latitude="57.035525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-3">
+        <sp:substationPosition>
+            <sp:coordinate longitude="11.996662" latitude="58.57374"/>
+        </sp:substationPosition>
+    </iidm:extension>
+    <iidm:extension id="SUB-26">
+        <sp:substationPosition>
+            <sp:coordinate longitude="13.094514" latitude="55.835525"/>
+        </sp:substationPosition>
+    </iidm:extension>
+</iidm:network>
